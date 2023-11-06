@@ -1,0 +1,91 @@
+/**
+colores
+Background color:#FBEDCA
+color primario:#007C89
+color secundario:#007C89
+color de texto: #241C15
+**/
+
+/**Generales**/
+
+body{
+    background-color:#FBEDCA ;
+    font-family:'Inter', sans-serif;
+    color:#241C15;
+}
+
+.ul-reset{
+    display:flex;
+    flex-wrap: wrap;
+    list-style:none;
+    padding:0
+}
+/**componentes**/
+
+.title{
+    font-family: 'Titan One', sans-serif;
+}
+
+.container{
+    margin-inline: auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+.image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1rem;
+    background-color: #007C89;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button:hover{
+    background: #C5DBF2;
+    color: #241C15;
+}
+.button--transparent{
+    background-color: transparent;
+    color: #241C15;
+}
+
+.link{
+    color: #007C89;
+}
+/** pagina de inicio**/
+
+.hero {
+    padding-block: 3rem;
+}
+
+.hero__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+@media (width <600px){
+    .hero__columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero__title {
+    font-size: 3rem
+}
+
+.hero__text{
+    font-size: 2rem;
+}
+
+.news{
+    background-color: #C5DBF2;
+}
+
